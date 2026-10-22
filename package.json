@@ -1,0 +1,39 @@
+{
+  "name": "company-lead-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "bootstrap:admin": "node scripts/bootstrap-super-admin.js",
+    "reset:admin": "node scripts/reset-super-admin-password.js",
+    "test:phase2": "node scripts/test-auth-suite.js",
+    "test:phase3": "node scripts/test-phase3-suite.js",
+    "test:formio": "node scripts/test-formio-suite.js",
+    "test:e2e": "node scripts/test-e2e-completion-suite.js",
+    "test:embed": "node scripts/test-embed-suite.js",
+    "test:export": "node scripts/test-export-suite.js",
+    "test:enhancements": "node scripts/test-enhancements-suite.js",
+    "test:admin-filters": "node scripts/test-super-admin-status-filters.js",
+    "test:admin-search-pagination": "node scripts/test-super-admin-search-pagination.js",
+    "test:multitenant-forms": "node scripts/test-multitenant-forms-suite.js",
+    "test:logout-fix": "node scripts/test-super-admin-logout-fix.js",
+    "test:shared-login": "node scripts/test-shared-login-suite.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "mongoose": "^9.11.2",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "tailwindcss": "^4"
+  }
+}
